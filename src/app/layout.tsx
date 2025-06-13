@@ -1,11 +1,7 @@
 import type { Metadata } from "next";
-import { JetBrains_Mono } from "next/font/google";
+import { jetBrainsMono } from "./ui/fonts";
 import "./globals.css";
-
-const jetBrainsMono = JetBrains_Mono({
-  variable: "--font-jetbrains-mono",
-  subsets: ["latin"],
-});
+import Sidebar from "@/components/layout/Sidebar";
 
 export const metadata: Metadata = {
   title: "LapisBerry",
@@ -19,10 +15,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${jetBrainsMono.variable} antialiased`}
-      >
-        {children}
+      <body className={`${jetBrainsMono.variable} antialiased flex`}>
+        <Sidebar />
+        <main className="flex-1">{children}</main>
       </body>
     </html>
   );
