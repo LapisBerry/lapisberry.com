@@ -12,7 +12,7 @@ const links = [
 
 export default function Sidebar() {
   return (
-    <aside className="flex flex-col items-center gap-3 w-48 h-[100vh] p-4 bg-dark">
+    <aside className="flex flex-col items-center gap-3 p-4 bg-mirage">
       {links.map((link) => (
         <NavButton
           key={link.name}

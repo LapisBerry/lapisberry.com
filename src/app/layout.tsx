@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
+import { AppRouterCacheProvider } from "@mui/material-nextjs/v15-appRouter";
 import { jetBrainsMono } from "./ui/fonts";
 import "./globals.css";
 import Sidebar from "@/components/layout/Sidebar";
+import Footer from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
   title: "LapisBerry",
@@ -15,10 +17,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${jetBrainsMono.variable} antialiased flex`}>
-        <Sidebar />
-        <main className="flex-1">{children}</main>
-      </body>
-    </html>
+      <AppRouterCacheProvider>
+        <body className={`${jetBrainsMono.variable} antialiased grid grid-cols-[12rem_1fr] grid-rows-[1fr_auto]`}>
+          <Sidebar />
+          {children}
+          <Footer className="col-span-2" />
+        </body>
+      </AppRouterCacheProvider>
+    </html >
   );
 }
