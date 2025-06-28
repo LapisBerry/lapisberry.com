@@ -34,8 +34,9 @@ export default function ActivitiesPage() {
             </ul>
           </div>
           :
-          <p>Loading...</p>}
+          <p>Loading...</p>
+        }
       </div>
-    </main >
+    </main>
   );
 }
