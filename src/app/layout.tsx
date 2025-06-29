@@ -20,10 +20,12 @@ export default function RootLayout({
       <AppRouterCacheProvider>
         <body className={`${jetBrainsMono.variable} antialiased grid grid-cols-[12rem_1fr] grid-rows-[1fr_auto]`}>
           <Sidebar />
-          {children}
+          <main className="min-h-screen">
+            {children}
+          </main>
           <Footer className="col-span-2" />
         </body>
       </AppRouterCacheProvider>
-    </html >
+    </html>
   );
 }

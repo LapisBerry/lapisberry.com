@@ -2,7 +2,13 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   images: {
-    remotePatterns: [new URL("https://cdn.discordapp.com/**")],
+    dangerouslyAllowSVG: true,
+    remotePatterns: [
+      { protocol: "https", hostname: "cdn.discordapp.com", pathname: "/**" },
+      { protocol: "https", hostname: "img.shields.io", pathname: "/**" },
+      { protocol: "https", hostname: "about.meta.com", pathname: "/**" },
+      { protocol: "https", hostname: "cdn.simpleicons.org", pathname: "/**" },
+    ],
   },
 };
 
