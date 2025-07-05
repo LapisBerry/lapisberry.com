@@ -22,7 +22,7 @@ export default function DiscordProfile() {
               draggable={false}
               width={100}
               height={100}
-              className="absolute rounded-full"
+              className="absolute rounded-full select-none"
             />
             {status.discord_user.avatar_decoration_data && (
               <Image
@@ -31,7 +31,7 @@ export default function DiscordProfile() {
                 draggable={false}
                 width={120}
                 height={120}
-                className="absolute"
+                className="absolute select-none"
               />
             )}
           </div>

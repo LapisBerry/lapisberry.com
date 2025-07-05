@@ -13,7 +13,7 @@ export default function ActivitiesPage() {
             alt="Discord Logo"
             width={280}
             height={103}
-            className="flex-1 w-[280px]"
+            className="flex-1 select-none w-[280px]"
           />
           <DiscordProfile />
         </div>
