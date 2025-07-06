@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v15-appRouter";
-import { jetBrainsMono } from "../components/ui/fonts";
+import { jetBrainsMono } from "@/components/ui/fonts";
 import "./globals.css";
 import Sidebar from "@/components/layout/Sidebar";
 import Footer from "@/components/layout/Footer";

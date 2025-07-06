@@ -7,6 +7,10 @@
   --color-dodger-blue: #4177F4;
   --color-mist-blue: #646887;
   --color-moonraker: #D0D3E7;
+
+  /* Discord */
+  --color-discord-blurple: #5865F2;
+  --color-discord-light-blurple: #E0E3FF;
 }
 
 @theme inline {
@@ -18,6 +22,10 @@
   --color-dodger-blue: var(--color-dodger-blue);
   --color-mist-blue: var(--color-mist-blue);
   --color-moonraker: var(--color-moonraker);
+
+  /* Discord */
+  --color-discord-blurple: var(--color-discord-blurple);
+  --color-discord-light-blurple: var(--color-discord-light-blurple);
 }
 
 body {
