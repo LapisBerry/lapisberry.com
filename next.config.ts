@@ -8,6 +8,8 @@ const nextConfig: NextConfig = {
       { protocol: "https", hostname: "img.shields.io", pathname: "/**" },
       { protocol: "https", hostname: "about.meta.com", pathname: "/**" },
       { protocol: "https", hostname: "cdn.simpleicons.org", pathname: "/**" },
+      { protocol: "https", hostname: "media.discordapp.net", pathname: "/**" },
+      { protocol: "https", hostname: "i.scdn.co", pathname: "/**" },
     ],
   },
 };
