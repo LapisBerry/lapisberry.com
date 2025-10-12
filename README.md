@@ -4,6 +4,12 @@ My website that will show almost anything. My projects, activities, skills, cont
 
 ## Getting Started
 
+Install dependencies
+
+```bash
+yarn
+```
+
 Run the development server:
 
 ```bash
