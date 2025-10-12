@@ -6,3 +6,4 @@ export const spotifyApi = axios.create({
     "Authorization": `Bearer ${process.env.SPOTIFY_ACCESS_TOKEN}`,
   },
 });
+

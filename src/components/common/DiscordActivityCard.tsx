@@ -25,3 +25,4 @@ export default function DiscordActivityCard({ activity }: { activity: Activity }
     </div>
   );
 }
+

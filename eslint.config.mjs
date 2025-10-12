@@ -21,8 +21,10 @@ const eslintConfig = [
       "eqeqeq": ["error", "always"], // Require strict equality
       "no-unused-vars": ["warn"], // Warn on unused variables
       "no-console": ["warn"], // Warn on console usage
+      "eol-last": ["error", "always"], // Enforce blank line at EOF
     },
   },
 ];
 
 export default eslintConfig;
+

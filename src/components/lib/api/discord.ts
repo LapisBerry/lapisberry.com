@@ -49,3 +49,4 @@ export const resolveDiscordAssetURL = (imageId: string, appId: string | null = n
 
   return "/"; // TODO: Add Fallback to Unknown format
 };
+
